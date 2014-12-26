@@ -1,0 +1,49 @@
+
+
+# =================
+# Exports
+# =================
+
+# Python Settings
+export DISPLAY=:00
+
+# Maven Directory
+export M2_HOME=/Users/carlos.silva/Documents/Dev/apache-maven-3.2.1
+export M2_BIN=$M2_HOME/bin
+
+# Java Directory
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_51.jdk/Contents/Home
+export JAVA_BIN=$JAVA_HOME/bin
+export JAVA_LIB=$JAVA_HOME/lib
+
+# Node Modules Directory
+export NODE_MODULES_HOME=/usr/local/lib/node_modules
+
+# MySQL Bin Directory
+export MYSQL_BIN=/usr/local/mysql/bin
+
+# Main Directories
+export MAIN_DIRS=/bin:/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin
+
+# Default editor
+export EDITOR='subl -w'
+
+# Android
+export ANDROID_TOOLS=/Users/carlos.silva/Documents/Dev/android-bundle-mac-x86_64-20140321/sdk/tools
+export ANDROID_PLATFORM_TOOLS=/Users/carlos.silva/Documents/Dev/android-bundle-mac-x86_64-20140321/sdk/platform-tools
+
+# Ant Bin Directory
+export ANT_BIN=/Users/carlos.silva/Documents/Dev/apache-ant-1.9.4/bin
+
+
+# =================
+# Paths Export
+# =================
+
+# Path
+export PATH=$M2_BIN:$JAVA_BIN:$NODE_MODULES_HOME:$MYSQL_BIN:$MAIN_DIRS:$ANDROID_TOOLS:$ANDROID_PLATFORM_TOOLS:$ANT_BIN:$PATH
+
+# ClassPath
+export CLASSPATH=$PATH:$JAVA_BIN:$JAVA_LIB
+
+
