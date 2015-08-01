@@ -96,3 +96,10 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
 
+# Create a python server on :8000
+alias pythonServer="python2.7 -m SimpleHTTPServer"
+
+# Kill exited containers from docker
+alias __dockerexited="docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs docker rm"
+
+alias killDockerImages="docker rm `docker ps -a | grep Exited | awk '{print $1 }'`; docker rmi `docker images -aq`"
