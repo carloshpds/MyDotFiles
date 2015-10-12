@@ -30,8 +30,8 @@ PS4='+ '
 }
 
 function updateDockerHost {
-  BOOT2DOCKER_IP=$(boot2docker ip 2>/dev/null)
-  $(boot2docker shellinit 2>/dev/null)
+  BOOT2DOCKER_IP=$(docker-machine ip docker-vm 2>/dev/null)
+  eval $(docker-machine env docker-vm 2>/dev/null)
 
   if [ "$BOOT2DOCKER_IP" != "" ] && ! grep -Fxq "$BOOT2DOCKER_IP docker" /etc/hosts; then
     echo "Creating boot2docker and docker hosts at /etc/hosts..."
@@ -39,6 +39,8 @@ function updateDockerHost {
     sudo sed -i '' '/[[:space:]]boot2docker$/d' /etc/hosts
     sudo bash -c "echo '$BOOT2DOCKER_IP docker' >> /etc/hosts"
     sudo bash -c "echo '$BOOT2DOCKER_IP boot2docker' >> /etc/hosts"
+  else
+    echo "Cannot create boot2docker and docker hosts at /etc/hosts... BOOT2DOCKER_IP: $BOOT2DOCKER_IP"
   fi
 }
 
