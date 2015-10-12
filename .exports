@@ -29,16 +29,20 @@ export MAIN_DIRS=/bin:/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin
 export EDITOR='subl -w'
 
 # Android
-export ANDROID_TOOLS=/Users/carlos.silva/Documents/Dev/android-bundle-mac-x86_64-20140321/sdk/tools
-export ANDROID_PLATFORM_TOOLS=/Users/carlos.silva/Documents/Dev/android-bundle-mac-x86_64-20140321/sdk/platform-tools
+export ANDROID_HOME=/Volumes/TIMEOUTZERO/Documents/Dev/android-bundle-mac-x86_64-20140321/sdk
+export ANDROID_TOOLS=$ANDROID_HOME:/tools
+export ANDROID_PLATFORM_TOOLS=$ANDROID_HOME:/platform-tools
+
+
 
 # Ant Bin Directory
 export ANT_BIN=/Users/carlos.silva/Documents/Dev/apache-ant-1.9.4/bin
 
 # Docker
-export DOCKER_HOST=tcp://192.168.59.103:2376
-export DOCKER_CERT_PATH=/Users/carlos.silva/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
+export DOCKER_TLS_VERIFY="1"
+export DOCKER_HOST="tcp://192.168.99.100:2376"
+export DOCKER_CERT_PATH="/Users/carlos.silva/.docker/machine/machines/docker-vm"
+export DOCKER_MACHINE_NAME="docker-vm"
 
 # =================
 # Paths Export
