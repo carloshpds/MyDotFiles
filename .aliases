@@ -102,4 +102,7 @@ alias pythonServer="python2.7 -m SimpleHTTPServer"
 # Kill exited containers from docker
 alias __dockerexited="docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs docker rm"
 
+alias dc="docker-compose"
+alias dm="docker-machine"
+
 alias killDockerImages="docker rm `docker ps -a | grep Exited | awk '{print $1 }'`; docker rmi `docker images -aq`"
