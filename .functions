@@ -53,3 +53,6 @@ function copyDotFileTo {
   unset file;
 }
 
+function killVBoxAndRestart {
+  killall -9 VBoxHeadless && docker-machine restart $1 && eval "$(docker-machine env docker-vm)"
+}
