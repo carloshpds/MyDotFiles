@@ -56,3 +56,7 @@ function copyDotFileTo {
 function killVBoxAndRestart {
   killall -9 VBoxHeadless && docker-machine restart $1 && eval "$(docker-machine env docker-vm)"
 }
+
+function createSublimeLink {
+  sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+}
