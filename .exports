@@ -8,11 +8,11 @@
 export DISPLAY=:00
 
 # Maven Directory
-export M2_HOME=/Users/carlos.silva/Documents/Dev/apache-maven-3.2.1
+export M2_HOME=/Users/carloshenrique/Documents/devSpace/apache-maven-3.3.9
 export M2_BIN=$M2_HOME/bin
 
 # Java Directory
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home
 export JAVA_BIN=$JAVA_HOME/bin
 export JAVA_LIB=$JAVA_HOME/lib
 
@@ -41,8 +41,8 @@ export ANT_BIN=/Users/carlos.silva/Documents/Dev/apache-ant-1.9.4/bin
 # Docker
 export DOCKER_TLS_VERIFY="1"
 export DOCKER_HOST="tcp://192.168.99.100:2376"
-export DOCKER_CERT_PATH="/Users/carlos.silva/.docker/machine/machines/docker-vm"
-export DOCKER_MACHINE_NAME="docker-vm"
+export DOCKER_CERT_PATH="/Users/carloshenrique/.docker/machine/machines/default"
+export DOCKER_MACHINE_NAME="default"
 
 # =================
 # Paths Export
