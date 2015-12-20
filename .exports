@@ -38,11 +38,6 @@ export ANDROID_PLATFORM_TOOLS=$ANDROID_HOME:/platform-tools
 # Ant Bin Directory
 export ANT_BIN=/Users/carlos.silva/Documents/Dev/apache-ant-1.9.4/bin
 
-# Docker
-export DOCKER_TLS_VERIFY="1"
-export DOCKER_HOST="tcp://192.168.99.100:2376"
-export DOCKER_CERT_PATH="/Users/carlos.silva/.docker/machine/machines/docker-vm"
-export DOCKER_MACHINE_NAME="docker-vm"
 
 # =================
 # Paths Export

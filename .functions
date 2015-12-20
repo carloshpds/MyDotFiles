@@ -60,3 +60,9 @@ function killVBoxAndRestart {
 function createSublimeLink {
   sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 }
+
+function dmStart {
+  docker-machine start $1
+  eval "$(docker-machine env $1)"
+  docker-machine env $1
+}
