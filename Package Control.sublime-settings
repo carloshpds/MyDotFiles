@@ -1,0 +1,39 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Alignment",
+		"AngularJS (CoffeeScript)",
+		"AutoFileName",
+		"Better CoffeeScript",
+		"CoffeeAngular Syntax",
+		"Color Highlighter",
+		"ColorSchemeSelector",
+		"DocBlockr",
+		"Dracula Color Scheme",
+		"Emmet",
+		"FileSystem Autocompletion",
+		"Gist",
+		"HTML Underscore Syntax",
+		"HTMLAttributes",
+		"Jasmine CoffeeScript",
+		"Jasmine Matchers Snippets",
+		"jQuery Snippets for Coffeescript",
+		"Jump Along Indent",
+		"LoremIpsum",
+		"Package Control",
+		"Path Tools",
+		"Sass",
+		"SASS Snippets",
+		"SCSS",
+		"Seti_UI",
+		"SideBarEnhancements",
+		"SublimeREPL",
+		"TodoReview",
+		"VAlign",
+		"WPath"
+	]
+}
