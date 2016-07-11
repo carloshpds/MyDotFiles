@@ -8,7 +8,7 @@
 export DISPLAY=:00
 
 # Maven Directory
-export M2_HOME=/Users/carlos.silva/Documents/Dev/apache-maven-3.2.1
+export M2_HOME=$HOME/Documents/Dev/apache-maven-3.2.1
 export M2_BIN=$M2_HOME/bin
 
 # Java Directory
@@ -36,15 +36,16 @@ export ANDROID_PLATFORM_TOOLS=$ANDROID_HOME:/platform-tools
 
 
 # Ant Bin Directory
-export ANT_BIN=/Users/carlos.silva/Documents/Dev/apache-ant-1.9.4/bin
+export ANT_BIN=$HOME/Documents/Dev/apache-ant-1.9.4/bin
 
+export Z_PATH=$HOME/Documents/devspace/z/z.sh;
 
 # =================
 # Paths Export
 # =================
 
 # Path
-export PATH=$M2_BIN:$JAVA_BIN:$NODE_MODULES_HOME:$MYSQL_BIN:$MAIN_DIRS:$ANDROID_TOOLS:$ANDROID_PLATFORM_TOOLS:$ANT_BIN:$PATH
+export PATH=$M2_BIN:$JAVA_BIN:$NODE_MODULES_HOME:$MYSQL_BIN:$MAIN_DIRS:$ANDROID_TOOLS:$ANDROID_PLATFORM_TOOLS:$ANT_BIN:$Z_PATH:$PATH
 
 # ClassPath
 export CLASSPATH=$PATH:$JAVA_BIN:$JAVA_LIB
