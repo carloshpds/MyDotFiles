@@ -62,7 +62,5 @@ function createSublimeLink {
 }
 
 function dmStart {
-  docker-machine start $1
-  eval "$(docker-machine env $1)"
-  docker-machine env $1
+  docker-machine start $1 && eval "$(docker-machine env $1)" && echo "Ready!"
 }
