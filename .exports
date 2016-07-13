@@ -8,11 +8,11 @@
 export DISPLAY=:00
 
 # Maven Directory
-export M2_HOME=$HOME/Documents/Dev/apache-maven-3.2.1
+export M2_HOME=$HOME/Documents/devspace/maven
 export M2_BIN=$M2_HOME/bin
 
 # Java Directory
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home
 export JAVA_BIN=$JAVA_HOME/bin
 export JAVA_LIB=$JAVA_HOME/lib
 
