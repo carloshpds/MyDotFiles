@@ -12,5 +12,3 @@ unset file;
 # =================
 # Initialize
 # =================
-proml
-# updateDockerHost
