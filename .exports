@@ -19,6 +19,11 @@ export JAVA_LIB=$JAVA_HOME/lib
 # Node Modules Directory
 export NODE_MODULES_HOME=/usr/local/lib/node_modules
 
+### NVM
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+### END NVM
+
 # MySQL Bin Directory
 export MYSQL_BIN=/usr/local/mysql/bin
 
@@ -26,26 +31,30 @@ export MYSQL_BIN=/usr/local/mysql/bin
 export MAIN_DIRS=/bin:/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin
 
 # Default editor
-export EDITOR='subl -w'
+export EDITOR='code'
 
 # Android
 export ANDROID_HOME=/Volumes/TIMEOUTZERO/Documents/Dev/android-bundle-mac-x86_64-20140321/sdk
 export ANDROID_TOOLS=$ANDROID_HOME:/tools
 export ANDROID_PLATFORM_TOOLS=$ANDROID_HOME:/platform-tools
 
-
+export DRACULA_THEME="/Users/cpraeiros/Documents/GitHub/personal/zsh"
+export ZSH_THEME="dracula"
+export ASPNETCORE_ENVIRONMENT="Development"
 
 # Ant Bin Directory
 export ANT_BIN=$HOME/Documents/Dev/apache-ant-1.9.4/bin
 
 export Z_PATH=$HOME/Documents/devspace/z/z.sh;
 
+export SOLANA=$HOME/.local/share/solana/install/active_release/bin
+
 # =================
 # Paths Export
 # =================
 
 # Path
-export PATH=$M2_BIN:$JAVA_BIN:$NODE_MODULES_HOME:$MYSQL_BIN:$MAIN_DIRS:$ANDROID_TOOLS:$ANDROID_PLATFORM_TOOLS:$ANT_BIN:$Z_PATH:$PATH
+export PATH=$M2_BIN:$JAVA_BIN:$NODE_MODULES_HOME:$MYSQL_BIN:$MAIN_DIRS:$ANDROID_TOOLS:$ANDROID_PLATFORM_TOOLS:$ANT_BIN:$Z_PATH:$NVM_DIR:$SOLANA:$PATH
 
 # ClassPath
 export CLASSPATH=$PATH:$JAVA_BIN:$JAVA_LIB
